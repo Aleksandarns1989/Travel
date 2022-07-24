@@ -1,0 +1,90 @@
+/* mobile menu toggle button */
+.menu-toggle__button {
+  position: relative;
+  display: flex;
+  width: 40px;
+  height: 30px;
+  margin: 25px;
+  margin-left: 38px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include mobile {
+    margin: 0;
+    margin-left: 25px;
+    margin-top: 2px;
+  }
+}
+
+.menu-toggle__button .menu-toggle__line {
+  margin: 0 auto;
+  position: relative;
+  top: 14px;
+  transition-duration: 0s;
+  transition-delay: 0.2s;
+  transition: background-color 0.3s;
+}
+
+.menu-toggle__button .menu-toggle__line:before,
+.menu-toggle__button .menu-toggle__line:after {
+  position: absolute;
+  content: "";
+}
+
+.menu-toggle__button .menu-toggle__line,
+.menu-toggle__button .menu-toggle__line:before,
+.menu-toggle__button .menu-toggle__line:after {
+  width: 40px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: $orange;
+  display: block;
+  opacity: 1;
+}
+
+.menu-toggle__button .menu-toggle__line:before {
+  margin-top: -10px;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0;
+}
+
+.menu-toggle__button .menu-toggle__line:after {
+  margin-top: 8px;
+  transition-property: margin, transform;
+  transition-duration: 0.2s;
+  transition-delay: 0.2s, 0;
+  left: 15px;
+  width: 25px;
+}
+
+.menu-toggle-active .menu-toggle__line {
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.3s background-color;
+}
+
+.menu-toggle-active .menu-toggle__line:before {
+  margin-top: 0;
+  transform: rotate(45deg);
+  transition-delay: 0, 0.2s;
+}
+
+.menu-toggle-active .menu-toggle__line:after {
+  left: 0;
+  width: 40px;
+  margin-top: 0;
+  transform: rotate(-45deg);
+  transition-delay: 0, 0.2s;
+}
+
+.menu-toggle-active {
+  .overlay-page {
+    left: 0;
+  }
+}

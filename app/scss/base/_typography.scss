@@ -1,0 +1,54 @@
+.h1 {
+  font-size: 80px;
+  line-height: 98px;
+
+  @include tablet {
+    font-size: 55px;
+    line-height: 67px;
+  }
+
+  @include mobile {
+    font-size: 45px;
+    line-height: 55px;
+  }
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 39px;
+
+  @include tablet {
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 27px;
+  }
+}
+
+.h3 {
+  font-size: 28px;
+  line-height: 34px;
+
+  @include tablet {
+    font-size: 23px;
+    line-height: 28px;
+  }
+}
+
+.h4 {
+  font-size: 18px;
+  line-height: 22px;
+
+  @include mobile {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.h5 {
+  font-size: 16px;
+  line-height: 27px;
+}

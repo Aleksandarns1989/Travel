@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.min.css">
+    <title>About us</title>
+  </head>
+  <body>
+    <!-- SECTION HEADER -->
+
+    <header class="header js-header">
+      <div class="header__container js-header-container">
+        <a href="index.html" class="header__logo"
+          ><img src="images/Logo.svg" alt="Logo" class="header__logo-img"
+        /></a>
+        <nav class="header__nav nav js-header-nav">
+          <ul class="nav__list">
+            <li class="nav__item js-nav-item">
+              <a href="/" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item js-nav-item">
+              <a href="#" class="nav__link">Discover</a>
+            </li>
+            <li class="nav__item js-nav-item">
+              <a href="/about-us" class="nav__link nav__link--active"
+                >About us</a
+              >
+            </li>
+            <li class="nav__item js-nav-item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item js-nav-item">
+              <a href="#" class="nav__link">Help</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__search search-container js-search-container">
+          <form class="search-container__main-form">
+            <button type="button" class="search-container__search">
+              <span class="sr-only">Search button search</span
+              ><i class="icon-search search-icon"></i>
+            </button>
+            <input
+              type="text"
+              placeholder="Search website..."
+              class="search-container__input-search"
+            />
+            <button
+              type="button"
+              class="search-container__close js-search-container-close"
+            >
+              <span class="sr-only">Search button close</span>
+              <i class="icon-icon-close close-icon-form"></i>
+            </button>
+          </form>
+        </div>
+
+        <button
+          type="button"
+          class="header__search-button js-header-search-button"
+        >
+          <span class="sr-only">Search button open</span>
+          <i class="icon-search search-icon"></i>
+        </button>
+
+        <div class="account">
+          <a href="#" class="account__link">Sing up</a>
+          <a href="#" class="account__link">Log in</a>
+        </div>
+        <div class="language-dropdown">
+          <button class="language-dropdown__button js-language-dropdown-button">
+            <span class="sr-only">Language dropdown</span>
+            <span class="language-dropdown__text js-language-dropdown-text"
+              >EN</span
+            >
+            <i class="icon-icon-arrow-down icon-arrow-down"></i>
+          </button>
+
+          <ul class="language-dropdown__list js-language-dropdown-list">
+            <li class="language-dropdown__item js-language-dropdown-item">
+              <a href="#" class="language-dropdown__link">English</a>
+            </li>
+            <li class="language-dropdown__item js-language-dropdown-item">
+              <a href="#" class="language-dropdown__link">German</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-toggle">
+          <button
+            class="menu-toggle__button js-menu-toggle-button"
+            type="button"
+          >
+            <span class="sr-only">Toggle menu</span>
+            <span class="menu-toggle__line"></span>
+          </button>
+        </div>
+        <div class="overlay-page">
+          <nav class="overlay-page__nav overlay">
+            <ul class="overlay__list">
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Home</a>
+              </li>
+
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Discover</a>
+              </li>
+
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">About us</a>
+              </li>
+
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Contact us</a>
+              </li>
+
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Help</a>
+              </li>
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Sing up</a>
+              </li>
+              <li class="overlay__item">
+                <a href="#" class="overlay__link">Login</a>
+              </li>
+              <li class="overlay__item">
+                <select class="overlay__select">
+                  <option class="overlay__option">English</option>
+                  <option class="overlay__option">German</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION BANER -->
+
+    <section class="banner">
+      <picture class="banner__pictures">
+        <source
+          media="(max-width: 767px)"
+          srcset="images/banner-bg-mobile.jpg"
+        />
+        <img class="cover-img" src="images/banner-bg.jpg" alt="Banner img" />
+      </picture>
+      <div class="container">
+        <div class="banner__wraper">
+          <div class="banner__box">
+            <h1 class="banner__title h1">Experience The World</h1>
+
+            <p class="banner__description">
+              Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
+              accusantimum doloremque laudantium, toatam rem aperiam eaque.
+            </p>
+            <div class="banner__buttons">
+              <a href="#" class="banner__link btn btn--orange">Explore All</a>
+              <button
+                class="banner__link btn btn--play js-btn-play"
+                data-video-url="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1"
+              >
+                <i class="icon-icon-play play-icon"></i
+                ><span class="banner__button-text">Watch storie</span>
+              </button>
+            </div>
+          </div>
+          <div class="banner__quote quote">
+            <div class="quote__box">
+              <blockquote class="quote__title h5">
+                Best travel guide!
+              </blockquote>
+              <p class="quote__description">
+                The communication was super easy and quick and the place looks
+                exactly like it does on the pictures. The neighborhood is very
+              </p>
+            </div>
+            <div class="quote__profile profile">
+              <img
+                src="images/profile.jpg"
+                class="profile__img"
+                alt="Profile image travel guide"
+              />
+              <div class="profile__wrap">
+                <div class="profile__name">
+                  Jamie Diaz <span class="profile__name-span">Serbia</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup js-video-popup-overlay" aria-hidden="true">
+          <div class="popup__content video-library__popup js-video-popup">
+            <div class="popup__video-container">
+              <iframe
+                class="popup__iframe js-popup-iframe"
+                allow="autoplay"
+              ></iframe>
+            </div>
+
+            <button class="popup__close-btn js-close-popup" type="button">
+              <i class="icon-icon-x close-icon-popup"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION EXPLORE -->
+
+    <section class="explore">
+      <div class="explore__section-wrap">
+        <div class="container">
+          <div class="explore__wrap">
+            <div class="explore__content content">
+              <h2 class="content__title h3">Most popular destinations</h2>
+              <p class="content__text">
+                Take a look at the Best Places to Travel in 2019 for additional
+                inspiration and if you already know where you're going this
+                coming year, share your plans with us on social media with
+                #TLBestPlacesthis link opens in a new tab.
+              </p>
+              <a href="#" class="content__link btn btn--orange">Explore All</a>
+            </div>
+            <div class="explore__slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      class="explore__image"
+                      src="images/novi-sad.jpg"
+                      alt="Slider image Novi Sad"
+                    />
+                    <span class="explore__span">Novi Sad, Serbia</span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="explore__image"
+                      src="images/amsterdam.jpg"
+                      alt="Slider image Amsterdam"
+                    />
+                    <span class="explore__span">Amsterdam, Netherlands</span>
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      class="explore__image"
+                      src="images/bahames.jpg"
+                      alt="Slider image Novi Sad"
+                    />
+                    <span class="explore__span">The Bahamas</span>
+                  </div>
+                </div>
+              </div>
+              <div class="explore__buttons">
+                <button class="explore__button-left">
+                  <i class="icon-icon-arrow-left prev-icon"></i>
+                </button>
+                <button class="explore__button-right">
+                  <i class="icon-icon-arrow-right next-icon"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION SUMMER-TOURS -->
+    <section class="summer-tours">
+      <div class="container">
+        <h2 class="summer-tours__title h2">Available Summer Tours</h2>
+        <div class="summer-tours__wrap">
+          <div class="summer-tours__boxes">
+            <img
+              class="summer-tours__bg-image"
+              src="images/travel-people.svg"
+              alt="Travel people"
+            />
+            <div class="summer-tours__box">
+              <i class="icon-icon-car car-icon"> </i>
+              <div class="summer-tours__content">
+                <h3 class="summer-tours__content-title h4">
+                  City Hiking Tour (3 hours)
+                </h3>
+                <p class="summer-tours__content-text">
+                  Get onboard one of our Round City Cable Car Tour.
+                </p>
+              </div>
+              <div class="summer-tours__info">
+                <span class="summer-tours__info-price"> $ 45.00 </span>
+                <a href="#" class="summer-tours__info-button btn btn--blue"
+                  >Book</a
+                >
+              </div>
+            </div>
+            <div class="summer-tours__box">
+              <i class="icon-icon-hiking hiking-icon"> </i>
+              <div class="summer-tours__content">
+                <h3 class="summer-tours__content-title h4">
+                  City Hiking Tour (1.5 hours)
+                </h3>
+                <p class="summer-tours__content-text">
+                  Get onboard one of our Round City Cable Car Tour.
+                </p>
+              </div>
+              <div class="summer-tours__info">
+                <span class="summer-tours__info-price"> $ 45.00 </span>
+                <a href="#" class="summer-tours__info-button btn btn--blue"
+                  >Book</a
+                >
+              </div>
+            </div>
+            <div class="summer-tours__box">
+              <i class="icon-icon-map map-icon"> </i>
+              <div class="summer-tours__content">
+                <h3 class="summer-tours__content-title h4">
+                  City Hiking Tour (3 hours)
+                </h3>
+                <p class="summer-tours__content-text">
+                  Get onboard one of our Round City Cable Car Tour.
+                </p>
+              </div>
+              <div class="summer-tours__info">
+                <span class="summer-tours__info-price"> $ 35.00 </span>
+                <a href="#" class="summer-tours__info-button btn btn--blue"
+                  >Book</a
+                >
+              </div>
+            </div>
+            <div class="summer-tours__box">
+              <i class="icon-icon-subway subway-icon"> </i>
+              <div class="summer-tours__content">
+                <h3 class="summer-tours__content-title h4">
+                  City Hiking Tour (3 hours)
+                </h3>
+                <p class="summer-tours__content-text">
+                  Get onboard one of our Round City Cable Car Tour.
+                </p>
+              </div>
+              <div class="summer-tours__info">
+                <span class="summer-tours__info-price"> $ 80.00 </span>
+                <a href="#" class="summer-tours__info-button btn btn--blue"
+                  >Book</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION TRAVELING -->
+    <section class="traveling">
+      <div class="container">
+        <h2 class="traveling__title">Traveling is Easy</h2>
+        <div class="traveling__wrap">
+          <div class="traveling__desctription desctription">
+            <h3 class="desctription__heading">All Services In One Round</h3>
+            <p class="desctription__title">Travel on beaches</p>
+            <p class="desctription__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+              sed sem id justo hendrerit varius. Nulla nec ante diam. Aenean
+              ligula elit, rutrum vitae est nec, imperdiet vestibulum lacus.
+              Nulla commodo sodales euismod. Ut sed elementum diam. Suspendisse
+              potenti. Etiam sed augue et urna imperdiet tincidunt. Curabitur
+              imperdiet enim luctus turpis fringilla viverra. Phasellus dictum
+              et dolor sit amet ornare. Vestibulum ante ipsum primis in faucibus
+              orci luctus et ultrices posuere cubilia Curae; Donec ultrices ante
+              ipsum, id ornare turpis pharetra ac.
+            </p>
+            <a href="#" class="desctription__link btn btn--orange">Read more</a>
+          </div>
+          <div class="traveling__accordion-wrap">
+            <h3 class="accordion__title">Discover popular places</h3>
+            <div class="accordion__wrap">
+              <div class="accordion__panel js-panel close">
+                <button
+                  class="accordion__heading js-accordion-heading"
+                  style="
+                    background-image: linear-gradient(
+                        to left,
+                        rgba(0, 0, 0, 0.55),
+                        rgba(255, 255, 255, 0)
+                      ),
+                      url(images/turkey.jpg);
+                  "
+                >
+                  <div class="accordion__heading-wraper">
+                    <div class="accordion__heading-box">
+                      <span class="sr-only">Accordion button Turkey</span>
+                      <span class="accordion__text">TURKEY</span>
+                      <i class="icon-icon-arrow-accordion icon-accordion"></i>
+                    </div>
+                  </div>
+                </button>
+                <div class="accordion__description">
+                  <h4 class="accordion__title-open">Istanbul</h4>
+                  <p class="accordion__text-open">
+                    Moscow, on the Moskva River in western Russia, is the
+                    nation’s cosmopolitan capital. In its historic core is the
+                    Kremlin, a complex that’s home to the president and tsarist
+                    treasures in the Armoury. Outside its walls is Red Square,
+                    Russia's symbolic center. It's home to Lenin’s Mausoleum,
+                    the State Historical
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__panel js-panel close">
+                <button
+                  class="accordion__heading js-accordion-heading"
+                  style="
+                    background-image: linear-gradient(
+                        to left,
+                        rgba(0, 0, 0, 0.55),
+                        rgba(255, 255, 255, 0)
+                      ),
+                      url(images/russia.jpg);
+                  "
+                >
+                  <div class="accordion__heading-wraper">
+                    <div class="accordion__heading-box">
+                      <span class="sr-only">Accordion button Russia</span>
+                      <span class="accordion__text">RUSSIA</span>
+                      <i class="icon-icon-arrow-accordion icon-accordion"></i>
+                    </div>
+                  </div>
+                </button>
+                <div class="accordion__description">
+                  <h4 class="accordion__title-open">Moscow</h4>
+                  <p class="accordion__text-open">
+                    Moscow, on the Moskva River in western Russia, is the
+                    nation’s cosmopolitan capital. In its historic core is the
+                    Kremlin, a complex that’s home to the president and tsarist
+                    treasures in the Armoury. Outside its walls is Red Square,
+                    Russia's symbolic center. It's home to Lenin’s Mausoleum,
+                    the State Historical
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__panel js-panel close">
+                <button
+                  class="accordion__heading js-accordion-heading"
+                  style="
+                    background-image: linear-gradient(
+                        to left,
+                        rgba(0, 0, 0, 0.55),
+                        rgba(255, 255, 255, 0)
+                      ),
+                      url(images/brazil.jpg);
+                  "
+                >
+                  <div class="accordion__heading-wraper">
+                    <div class="accordion__heading-box">
+                      <span class="sr-only">Accordion button Brazil</span>
+                      <span class="accordion__text">BRAZIL</span>
+                      <i class="icon-icon-arrow-accordion icon-accordion"></i>
+                    </div>
+                  </div>
+                </button>
+                <div class="accordion__description">
+                  <h4 class="accordion__title-open">Rio de Janeiro</h4>
+                  <p class="accordion__text-open">
+                    Moscow, on the Moskva River in western Russia, is the
+                    nation’s cosmopolitan capital. In its historic core is the
+                    Kremlin, a complex that’s home to the president and tsarist
+                    treasures in the Armoury. Outside its walls is Red Square,
+                    Russia's symbolic center. It's home to Lenin’s Mausoleum,
+                    the State Historical
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__panel js-panel close">
+                <button
+                  class="accordion__heading js-accordion-heading"
+                  style="
+                    background-image: linear-gradient(
+                        to left,
+                        rgba(0, 0, 0, 0.55),
+                        rgba(255, 255, 255, 0)
+                      ),
+                      url(images/china.jpg);
+                  "
+                >
+                  <div class="accordion__heading-wraper">
+                    <div class="accordion__heading-box">
+                      <span class="sr-only">Accordion button China</span>
+                      <span class="accordion__text">CHINA</span>
+                      <i class="icon-icon-arrow-accordion icon-accordion"></i>
+                    </div>
+                  </div>
+                </button>
+                <div class="accordion__description">
+                  <h4 class="accordion__title-open">Beijing</h4>
+                  <p class="accordion__text-open">
+                    Moscow, on the Moskva River in western Russia, is the
+                    nation’s cosmopolitan capital. In its historic core is the
+                    Kremlin, a complex that’s home to the president and tsarist
+                    treasures in the Armoury. Outside its walls is Red Square,
+                    Russia's symbolic center. It's home to Lenin’s Mausoleum,
+                    the State Historical
+                  </p>
+                </div>
+              </div>
+              <div class="accordion__panel js-panel close">
+                <button
+                  class="accordion__heading js-accordion-heading"
+                  style="
+                    background-image: linear-gradient(
+                        to left,
+                        rgba(0, 0, 0, 0.55),
+                        rgba(255, 255, 255, 0)
+                      ),
+                      url(images/thailand.jpg);
+                  "
+                >
+                  <div class="accordion__heading-wraper">
+                    <div class="accordion__heading-box">
+                      <span class="sr-only">Accordion button Thailand</span>
+                      <span class="accordion__text">THAILAND</span>
+                      <i class="icon-icon-arrow-accordion icon-accordion"></i>
+                    </div>
+                  </div>
+                </button>
+                <div class="accordion__description">
+                  <h4 class="accordion__title-open">Bangkok</h4>
+                  <p class="accordion__text-open">
+                    Moscow, on the Moskva River in western Russia, is the
+                    nation’s cosmopolitan capital. In its historic core is the
+                    Kremlin, a complex that’s home to the president and tsarist
+                    treasures in the Armoury. Outside its walls is Red Square,
+                    Russia's symbolic center. It's home to Lenin’s Mausoleum,
+                    the State Historical
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="standard-content">
+      <div class="container">
+        <div class="richtext">
+          <h1>I am page heading</h1>
+
+          <ul>
+            <li>
+              Duis vel euismod arcu. Etiam vestibulum leo ipsum, nec lacinia
+              nunc lobortis posuere. Nam luctus lorem at nibh porta, quis
+            </li>
+            <li>
+              In ac sodales odio, ac viverra ante. Nunc massa felis, blandit
+              fringilla risus eget, feugiat vulputate nulla. Duis sollicitudin
+              dictum velit sit amet sodales. Mauris in sapien vitae risus
+              maximus condimentum et a diam. Nullam rutrum rutrum enim, in
+              luctus libero egestas non.
+            </li>
+            <li>Duis vel euismod arcu.</li>
+          </ul>
+          <h2>I am page subheading</h2>
+
+          <p>
+            Duis vel euismod arcu. Etiam vestibulum leo ipsum, nec lacinia nunc
+            lobortis posuere. Nam luctus lorem at nibh porta, quis fermentum
+            lacus porta. Nam dictum dapibus convallis. Suspendisse vitae porta
+            arcu, non cursus lectus. Duis sollicitudin vestibulum egestas.
+            Praesent pharetra congue quam sed sodales. Proin in bibendum purus.
+            Aenean blandit purus a hendrerit tincidunt. Check it
+            <a href="">here</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FORM -->
+
+    <section class="form">
+      <div class="container">
+        <div class="form__container">
+          <h2 class="form__tite">Contact Us</h2>
+          <div class="form__content">
+            <img
+              class="form__image"
+              src="images/Work-people.svg"
+              alt="People at work"
+            />
+            <form
+              action="/"
+              class="form__group js-form-group"
+              name="form"
+              id="form"
+              data-empty-message="This filed is required"
+              data-invalid-message="This filed is not valid"
+              data-checked-message="This fild must be checkd"
+            >
+              <div class="form__wraper">
+                <div class="form__box js-required-fild" data-name="fullName">
+                  <label for="fullName" class="form__label">Full name</label>
+                  <input
+                    type="text"
+                    placeholder="John Doerr"
+                    class="form__input"
+                    name="fullName"
+                    id="fullName"
+                  />
+                  <span class="js-form-error form__error-message"></span>
+                </div>
+                <div class="form__box js-required-fild" data-name="email">
+                  <label for="email" class="form__label">E-mail</label>
+                  <input
+                    type="text"
+                    placeholder="jhondoerr@gmail.com"
+                    class="form__input"
+                    name="email"
+                    id="email"
+                  />
+                  <span class="js-form-error form__error-message"></span>
+                </div>
+                <div class="form__box">
+                  <label for="message" class="form__label">Message</label>
+                  <textarea
+                    class="form__input form__input-textarea"
+                    name="message"
+                    id="message"
+                    placeholder="Your message"
+                  ></textarea>
+                </div>
+                <div
+                  class="form__check-box check-box js-required-fild"
+                  data-name="privacy"
+                >
+                  <label class="check-box__label" for="privacy">
+                    <input
+                      class="check-box__input"
+                      type="checkbox"
+                      id="privacy"
+                      name="privacy"
+                      value="accept"
+                      checked
+                    />
+
+                    <span class="check-box__checkmark"></span>
+                    I agree to the
+                    <a href="#" class="check-box__link">
+                      <span class="check-box__input--span"
+                        >Terms, Privacy Policy</span
+                      >
+                    </a>
+                    and
+                    <a href="" class="check-box__link"
+                      ><span class="check-box__input--span">Fees.</span></a
+                    ></label
+                  >
+                  <span class="js-form-error form__error-message"></span>
+                </div>
+                <button
+                  id="btnSub"
+                  name="btnSub"
+                  type="submit"
+                  class="form__button btn btn--orange js-form-button"
+                >
+                  <span class="form__button-text">Send message</span>
+                  <span class="sr-only">Submit button</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION FOOTER -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-link">
+              <img
+                src="images/Logo-footer.svg"
+                alt="Footer Logo"
+                class="footer__logo-img"
+              />
+            </a>
+            <ul class="footer__logo-nav nav-logo">
+              <li class="nav-logo__item">
+                <a href="#" class="nav-logo__link"
+                  >Industry-leading travel app</a
+                >
+              </li>
+              <li class="nav-logo__item">
+                <a href="#" class="nav-logo__link"
+                  >Aliquam viverra non risus eget auctor. Praesent tincidunt
+                  nunc quis tellus congue</a
+                >
+              </li>
+              <li class="nav-logo__item">
+                <a href="#" class="nav-logo__link"
+                  >Made in Novi Sad, Serbia, SRB</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer__content">
+            <div class="footer__navigation">
+              <p class="footer__heading">FEATURES</p>
+              <ul class="footer__nav nav-footer">
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Analytics</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Activity</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Content Management</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Publishing</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__navigation">
+              <p class="footer__heading">ABOUT</p>
+              <ul class="footer__nav nav-footer">
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Blog</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Pricing</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">FAQ</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Product Changes</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__navigation">
+              <p class="footer__heading">FREE TOOLS</p>
+              <ul class="footer__nav nav-footer">
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Instagram</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link">Instagram Brand Index</a>
+                </li>
+                <li class="nav-footer__item">
+                  <a href="#" class="nav-footer__link"
+                    >Instagram Influencers Index</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright__container">
+            <p class="copyright__text">
+              &copy; Company Name All rights reserved.
+            </p>
+            <div class="copyright__icons">
+              <i class="icon-icon-twitter twitter-icon"></i>
+              <i class="icon-icon-instagram instagram-icon"></i>
+              <i class="icon-icon-fb fb-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="js/main.min.js"></script>
+</html>

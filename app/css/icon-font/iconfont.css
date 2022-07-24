@@ -1,0 +1,100 @@
+/**
+myfont Webfont
+*/
+@font-face {
+  font-family: "myfont";
+  src: url("../fonts/myfont.eot?1658704514294");
+  src: url("../fonts/myfont.eot?#iefix-1658704514294") format("embedded-opentype"), url("../fonts/myfont.woff2?1658704514294") format("woff2"), url("../fonts/myfont.woff?1658704514294") format("woff"), url("../fonts/myfont.ttf?1658704514294") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+[class^=icon-]::before,
+[class*=" icon-"]::before {
+  font-family: "myfont";
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  speak: none;
+  text-decoration: inherit;
+  font-size: inherit;
+  text-transform: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+Glyphs list
+*/
+.icon-icon-arrow-accordion::before {
+  content: "\ea01";
+}
+
+.icon-icon-arrow-down::before {
+  content: "\ea02";
+}
+
+.icon-icon-arrow-left::before {
+  content: "\ea03";
+}
+
+.icon-icon-arrow-right::before {
+  content: "\ea04";
+}
+
+.icon-icon-arrow-up::before {
+  content: "\ea05";
+}
+
+.icon-icon-car::before {
+  content: "\ea06";
+}
+
+.icon-icon-close::before {
+  content: "\ea07";
+}
+
+.icon-icon-fb::before {
+  content: "\ea08";
+}
+
+.icon-icon-hiking::before {
+  content: "\ea09";
+}
+
+.icon-icon-instagram::before {
+  content: "\ea0a";
+}
+
+.icon-icon-map::before {
+  content: "\ea0b";
+}
+
+.icon-icon-play::before {
+  content: "\ea0c";
+}
+
+.icon-icon-subway::before {
+  content: "\ea0d";
+}
+
+.icon-icon-twitter::before {
+  content: "\ea0e";
+}
+
+.icon-icon-x::before {
+  content: "\ea0f";
+}
+
+.icon-search::before {
+  content: "\ea10";
+}

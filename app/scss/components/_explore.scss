@@ -1,0 +1,166 @@
+.explore {
+  background-color: $white;
+  overflow: hidden;
+}
+
+.explore__section-wrap {
+  position: relative;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.explore__wrap {
+  display: flex;
+  padding-bottom: 70px;
+  padding-top: 121px;
+
+  @include tablet {
+    padding-bottom: 32px;
+    padding-top: 90px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.explore__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 104px;
+  padding-bottom: 104px;
+  flex-shrink: 0;
+  width: 614px;
+
+  @include tablet {
+    max-width: 410px;
+    padding-top: 10px;
+    padding-bottom: 57px;
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    width: 100%;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 33px;
+  }
+}
+
+.content__title {
+  color: $green;
+  z-index: 1;
+
+  &::after {
+    content: "Explore";
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 75px;
+    font-weight: 700;
+    color: $white-10;
+    top: -52px;
+    left: 0;
+    z-index: -1;
+
+    @include tablet {
+      font-size: 65px;
+      line-height: 79px;
+      top: -69px;
+    }
+
+    @include mobile {
+      left: 26px;
+    }
+  }
+
+  @include tablet {
+    max-height: 55px;
+  }
+}
+
+.content__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin-bottom: 38px;
+  padding-right: 94px;
+
+  @include tablet {
+    margin-bottom: 31px;
+    padding-right: 29px;
+  }
+
+  @include mobile {
+    text-align: center;
+    margin-bottom: 36px;
+    padding-right: 0;
+  }
+}
+
+.content__link {
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.explore__slider {
+  width: 896px;
+}
+
+.explore__image {
+  border-radius: 4px;
+  display: block;
+  width: 280px;
+  height: 415px;
+}
+
+.explore__span {
+  position: absolute;
+  color: $white;
+  bottom: 16px;
+  left: 23px;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  font-family: $font-default;
+}
+
+.explore__button-left,
+.explore__button-right {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  z-index: 1;
+}
+
+.explore__button-left {
+  position: relative;
+  top: -225px;
+  left: 17px;
+}
+
+.explore__button-right {
+  position: absolute;
+  top: 312px;
+  right: 0;
+  margin-right: 23px;
+
+  @include tablet {
+    top: 283px;
+    right: -14px;
+  }
+
+  @include mobile {
+    top: 603px;
+    right: -2px;
+  }
+}
+
+.prev-icon,
+.next-icon {
+  color: $white;
+  font-size: 33px;
+}

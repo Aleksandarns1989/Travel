@@ -1,0 +1,206 @@
+.banner {
+  position: relative;
+  color: $white;
+
+  .container {
+    height: 100%;
+  }
+}
+
+.banner__wraper {
+  height: 100%;
+  display: flex;
+  padding-top: 197px;
+  padding-bottom: 232px;
+
+  @include tablet {
+    flex-direction: column;
+    padding-bottom: 94px;
+  }
+
+  @include mobile {
+    padding-bottom: 33px;
+    padding-top: 139px;
+  }
+}
+
+.banner__box {
+  max-width: 482px;
+
+  @include tablet {
+    max-width: 442px;
+  }
+
+  @include mobile {
+    max-width: 375px;
+    margin-top: 17px;
+  }
+}
+
+.banner__title {
+  margin-bottom: 27px;
+
+  @include tablet {
+    margin-bottom: 25px;
+  }
+
+  @include mobile {
+    margin-bottom: 40px;
+  }
+}
+
+.banner__description {
+  margin-bottom: 75px;
+
+  @include tablet {
+    margin-bottom: 71px;
+  }
+
+  @include mobile {
+    margin-bottom: 55px;
+  }
+}
+
+.banner__buttons {
+  display: flex;
+}
+
+.banner__link {
+  &:last-child {
+    margin-left: 20px;
+  }
+}
+
+.play-icon {
+  font-size: 12px;
+}
+
+.banner__button-text {
+  font-family: $font-default;
+  padding-left: 8px;
+}
+
+.banner__quote {
+  display: flex;
+  margin-left: auto;
+  align-items: flex-end;
+  margin-bottom: -81px;
+  max-width: 100%;
+
+  @include tablet {
+    margin-top: 62px;
+    margin-bottom: 0;
+  }
+
+  @include mobile {
+    justify-content: flex-end;
+    margin-top: 147px;
+    flex-direction: column;
+  }
+}
+
+.quote__box {
+  max-width: 271px;
+  margin-left: auto;
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    content: url("../../images/quote-icon.svg");
+    position: absolute;
+    top: -42px;
+    left: -58px;
+    z-index: -1;
+
+    @include tablet {
+      top: -41px;
+      left: -62px;
+    }
+
+    @include mobile {
+      top: -23px;
+      left: 62px;
+    }
+  }
+
+  @include tablet {
+    padding-bottom: 0;
+  }
+
+  @include mobile {
+    text-align: right;
+  }
+}
+
+.quote__title {
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 700;
+  color: $black;
+
+  @include mobile {
+    margin-bottom: 6px;
+  }
+}
+
+.quote__description {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $black;
+  margin-top: 8px;
+
+  @include tablet {
+    margin-top: 6px;
+  }
+}
+
+.quote__profile {
+  display: flex;
+  min-height: 154px;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include tablet {
+    min-height: 153px;
+    margin-top: -9px;
+  }
+
+  @include mobile {
+    min-height: 52px;
+    flex-direction: row-reverse;
+    margin-top: 15px;
+    align-items: self-start;
+  }
+}
+
+.profile__img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.profile__wrap {
+  display: flex;
+  transform: translate(26px, 40px) rotate(-90deg);
+
+  @include mobile {
+    text-align: right;
+    transform: none;
+  }
+}
+
+.profile__name {
+  max-width: 88px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $black;
+}
+
+.profile__name-span {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $black;
+}

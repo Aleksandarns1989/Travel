@@ -1,0 +1,333 @@
+.summer-tours {
+  background-color: $green-30;
+  padding-top: 78px;
+  position: relative;
+  overflow: hidden;
+  min-height: 862px;
+  z-index: 0;
+
+  @include tablet {
+    padding-top: 36px;
+    min-height: 677px;
+  }
+
+  @include mobile {
+    padding-bottom: 109px;
+  }
+}
+
+.summer-tours__title {
+  text-align: center;
+  color: $white;
+  margin-bottom: 104px;
+
+  @include tablet {
+    margin-bottom: 54px;
+  }
+
+  @include mobile {
+    margin-bottom: 57px;
+  }
+}
+
+.summer-tours__boxes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+}
+
+.summer-tours__bg-image {
+  position: absolute;
+  bottom: 112px;
+  right: 56px;
+  width: 778px;
+  z-index: -1;
+
+  @include tablet {
+    bottom: 45px;
+    right: -171px;
+    width: 752px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.summer-tours__box {
+  color: $black-20;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $white;
+  max-width: 682px;
+  margin-bottom: 41px;
+  border-radius: 4px;
+
+  @include tablet {
+    margin-bottom: 18px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+  }
+
+  &:hover {
+    max-width: 900px;
+
+    @include tablet {
+      max-width: 706px;
+    }
+
+    @include mobile {
+      max-height: 332px;
+    }
+
+    .summer-tours__box-wrap {
+      padding-left: 48px;
+      padding-right: 80px;
+      padding-top: 32px;
+      padding-bottom: 28px;
+      border-right: 6px dotted $white-40;
+
+      @include tablet {
+        padding-left: 36px;
+        padding-right: 49px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        border-right: 6px dotted $white-40;
+      }
+
+      @include mobile {
+        padding-left: 0;
+        padding-right: 7px;
+        padding-top: 31px;
+        padding-bottom: 23px;
+        border-right: 0;
+        border-bottom: 6px dotted $white-40;
+      }
+    }
+
+    .car-icon,
+    .hiking-icon,
+    .map-icon,
+    .subway-icon {
+      font-size: 64px;
+      @include tablet {
+        font-size: 50px;
+      }
+    }
+
+    .summer-tours__content {
+      @include tablet {
+        padding-left: 40px;
+      }
+
+      @include mobile {
+        padding-left: 20px;
+      }
+    }
+
+    .summer-tours__content-title {
+      font-size: 22px;
+      line-height: 27px;
+
+      @include tablet {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .summer-tours__content-text {
+      font-size: 16px;
+      line-height: 19px;
+
+      @include tablet {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      @include mobile {
+        padding: 0 48px;
+      }
+    }
+
+    .summer-tours__info {
+      @include tablet {
+        margin-right: 36px;
+      }
+
+      @include mobile {
+        padding-top: 27px;
+        padding-bottom: 36px;
+        margin-right: 5px;
+      }
+    }
+
+    .summer-tours__info-price {
+      font-size: 30px;
+      line-height: 36px;
+
+      @include tablet {
+        font-size: 22px;
+        line-height: 27px;
+      }
+    }
+
+    .summer-tours__info-button {
+      display: block;
+      opacity: 1;
+      visibility: visible;
+
+      @include mobile {
+        padding: 8px 35px;
+      }
+    }
+
+    .btn--blue {
+      margin-top: 15px;
+      padding: 11px 44px;
+
+      @include tablet {
+        margin-top: 4px;
+        padding: 7px 25px;
+      }
+    }
+  }
+}
+
+.summer-tours__box-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 48px;
+  padding-right: 25px;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  border-right: 4px dotted $white-40;
+
+  @include tablet {
+    padding-left: 47px;
+    padding-right: 65px;
+    padding-top: 17px;
+    padding-bottom: 10px;
+    border-right: 5px dotted $white-40;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 32px;
+    border-right: 0;
+    border-bottom: 6px dotted $white-40;
+  }
+}
+
+.summer-tours__content {
+  padding-left: 51px;
+
+  @include tablet {
+    padding-left: 64px;
+  }
+
+  @include mobile {
+    padding: 0;
+    padding-top: 24px;
+  }
+}
+
+.summer-tours__content-title {
+  margin-bottom: 13px;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.summer-tours__content-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+
+  @include mobile {
+    text-align: center;
+    padding: 0 26px;
+  }
+}
+
+.summer-tours__info {
+  margin-right: 36px;
+
+  @include tablet {
+    margin-right: 25px;
+  }
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 32px 0;
+  }
+}
+
+.summer-tours__info-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 700;
+  color: $yellow;
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+.summer-tours__info-button {
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.car-icon {
+  font-size: 35px;
+  color: $blue;
+
+  @include tablet {
+    font-size: 24px;
+  }
+
+  @include mobile {
+    font-size: 53px;
+  }
+}
+
+.hiking-icon {
+  font-size: 54px;
+  color: $red;
+
+  @include tablet {
+    font-size: 38px;
+  }
+
+  @include mobile {
+    font-size: 54px;
+  }
+}
+
+.map-icon {
+  font-size: 36px;
+  color: $green-20;
+
+  @include tablet {
+    font-size: 27px;
+  }
+}
+
+.subway-icon {
+  font-size: 45px;
+  color: $yellow-10;
+
+  @include tablet {
+    font-size: 35px;
+  }
+}

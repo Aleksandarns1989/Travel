@@ -1,0 +1,43 @@
+.btn {
+  display: inline-block;
+  color: $white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 17px 35px;
+}
+
+.btn--orange {
+  background-color: $orange;
+
+  &:hover {
+    background-color: $orange-10;
+  }
+}
+
+.btn--blue {
+  background-color: $blue-10;
+
+  &:hover {
+    background-color: $blue-20;
+  }
+}
+
+.btn--play {
+  display: flex;
+  align-items: center;
+  background-color: inherit;
+  border: 2px solid $white;
+  color: $white;
+  padding: 0 28px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+    border: none;
+  }
+}

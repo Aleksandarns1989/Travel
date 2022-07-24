@@ -1,0 +1,14 @@
+{
+  "defaultSeverity": "warning",
+  "rules": {
+    "block-no-empty": true,
+    "length-zero-no-unit": true,
+    "max-nesting-depth": 3,
+    "number-no-trailing-zeros": true,
+    "selector-max-id": 0
+  },
+  "ignoreFiles": [
+    "src/scss/icon-font/iconfont.scss",
+    "src/iconfont-template/iconfont.scss"
+  ]
+}
